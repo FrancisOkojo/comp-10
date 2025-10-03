@@ -1,0 +1,48 @@
+
+body{
+    background-color: #0f1720;
+    color: #e2e8f0;
+
+}
+header{
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 10px;
+    background-color: #facc15;
+
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+input{
+    width: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: white;
+
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}
+.new-tegomin-regular {
+    font-family: "New Tegomin", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .section {
+    padding: 20px;
+  }
+  a{
+    text-justify: auto;
+    text-decoration: none;
+    color: #e2e8f0;
+    text-align: right;
+
+  }
+  

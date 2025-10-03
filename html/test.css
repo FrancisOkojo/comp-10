@@ -1,0 +1,32 @@
+body{
+  background-color: rgb(255, 255, 255);
+
+    
+
+}
+.fit{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    
+}
+
+a{
+    color: black;
+    font-size: 3em;
+    margin-right:20px ;
+}
+.pass{
+  border-radius: 5px;
+  background: black;
+  display: inline-block;
+  color: aliceblue;
+  text-decoration: none;
+  
+}.intro{
+  background:rgb(220, 253, 253); border: 1px solid #868282;
+  border-radius: 8px; padding:18px; box-shadow: var(--shadow);
+  padding: 18px; margin: 18px auto 30px; max-width: 800px;
+}

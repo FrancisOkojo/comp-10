@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Birthday-party-booking</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen'>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      input{
+        display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 8px;
+      }
+      form {
+      background-color: rgb(80, 27, 80);
+      padding: 20px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 10px;
+      color: aliceblue;
+    }
+
+
+    </style>
+</head>
+<body class="bg-slate-900">
+  
+    <div class="overflow-hidden bg-slate-900 py-24 sm:py-32 mt-10 mb-10">
+        <div class="mx-5 max-w-7xl px-6 lg:px-8"> 
+          <header class="flex items-center justify-between mb-8">
+            <!-- Left: Logo -->
+            <div>
+              <img src="https://iili.io/KVXZI3B.md.png" alt="Logo" class="w-70 h-70">
+            </div>
+          
+            <!-- Right: Navigation Links -->
+            <nav class="flex space-x-6">
+              <a href="#" class="text-white hover:text-pink-400 text-lg font-medium">Home</a>
+              <a href="#" class="text-white hover:text-pink-400 text-lg font-medium">Calendar</a>
+            </nav>
+          </header>
+          
+          
+          <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <div class="lg:pt-4 lg:pr-8">
+              <div class="lg:max-w-lg">
+                
+                <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty sm:text-5xl text-pink-500 glow mb-4">Birthday party</p>
+                <p class="mt-6 text-lg/8 text-gray-300">
+                </p>
+                <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-400 lg:max-w-none">
+                  <div class="relative pl-9">
+                    <dt class="inline font-semibold text-white">
+                      </svg>
+                      <h2>packages</h2>
+                    </dt>
+                    <dd class="inline"> <ol>
+                        <strong>Mini Celebration</strong> :$199 (Up to 10 guests)
+                        <li><strong>Deluxe Party</strong> :$399 (Up to 25 guests)</li>
+                        <li><strong>Ultimate Bash</strong> :$699 (Up to 50 guests)</li>
+                       </ol></dd>
+                  </div>
+                  <div class="relative pl-9">
+                    <dt class="inline font-semibold text-white">
+                      1st package
+                    </dt>
+                    <dd class="inline"><li><strong>Mini Celebration</strong> :$199 (Up to 10 guests)</dd></li>
+                  </div>
+                  <div class="relative pl-9">
+                    <dt class="inline font-semibold text-white">
+                      2nd package
+                    </dt>
+                    <dd class="inline"><li><strong>Deluxe Party</strong> :$399 (Up to 25 guests)</li></dd>
+                  </div>
+                  <div class="relative pl-9">
+                    <dt class="inline font-semibold text-white">
+                      3rd package
+                    </dt>
+                    <dd class="inline"><li><strong>Ultimate Bash</strong> :$699 (Up to 50 guests)</li></dd>
+                    <div class="section bg-slate-600 p-6 rounded-md">
+                      <h2 class="text-pink-500 text-2xl font-bold mb-4">📅 Book Your Party</h2>
+                      <form>
+                        <label>Your Name:</label>
+                        <input type="text" placeholder="Jane Doe">
+                    
+                        <label>Email:</label>
+                        <input type="email" placeholder="jane@example.com">
+                    
+                        <label>Child's Name:</label>
+                        <input type="text">
+                    
+                        <label>Child's Age:</label>
+                        <input type="number">
+                    
+                        <label>Date:</label>
+                        <input type="date">
+                    
+                        <label>Number of Guests:</label>
+                        <input type="number">
+                    
+                        <label>Choose a Package:</label>
+                        <select>
+                          <option>Mini Celebration</option>
+                          <option>Deluxe Party</option>
+                          <option>Ultimate Bash</option>
+                        </select>
+                    
+                        <label>Extra Options:</label>
+                        <input type="checkbox"> Face Painting<br>
+                        <input type="checkbox"> Catering<br>
+                        <input type="checkbox"> Gift Bags<br>
+                    
+                        <label>Any Notes:</label>
+                        <textarea></textarea>
+                    
+                        <button type="submit">Book Now</button>
+                      </form>
+                    </div>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
