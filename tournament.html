@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Port</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' media='screen'> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://1d76f5ed-e3c0-46a7-a21a-87d78bdce19c-00-3gucamvbhc2pr.picard.replit.dev/">
+
+
+  <style>
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .pixelify-sans {
+      font-family: "Pixelify Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+
+    @keyframes gradient-scroll {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      100% {
+        background-position: 200% 50%;
+      }
+    }
+
+    .gradient-scroll-text {
+      background-size: 200% 100%;
+      animation: gradient-scroll 5s linear infinite;
+    }
+
+    @keyframes yellowToBlueGlow {
+
+      0%,
+      100% {
+        text-shadow:
+          0 0 15px #facc15,
+          0 0 12px #facc15,
+          0 0 16px #facc15;
+      }
+
+      50% {
+        text-shadow:
+          0 0 8px #3b82f6,
+          0 0 12px #3b82f6,
+          0 0 16px #3b82f6;
+      }
+    }
+
+    .animate-yellowToBlueGlow {
+      animation: yellowToBlueGlow 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+  <div class="bg-grey-100">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+
+        <div class="flex flex-col items-center justify-start text-center py-12">
+          <img src="https://iili.io/KMPMUJ4.md.png" class="p-4 object-cover h-48 w-96 mx-auto rounded-lg" />
+
+          <h1
+            class="bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text inline-block text-5xl font-bold pixelify-sans mt-4 gradient-scroll-text">
+            Tournament
+          </h1>
+
+          <h2
+            class="border-b-2 border-transparent hover:border-white hover:border-b-2 cursor-pointer bg-gradient-to-r from-purple-500 to-pink-500 inline-block text-transparent bg-clip-text text-2xl font-semibold pixelify-sans mt-2">
+            Featured Games
+          </h2>
+        </div>
+
+        <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+          <!-- Pac-Man Section -->
+          <div class="group relative">
+            <img src="https://iili.io/KMPbkCB.md.webp" alt="picture of a Pac Man retro video game"
+              class="w-full h-full rounded-lg bg-white object-cover group-hover:opacity-75 max-sm:h-80 sm:aspect-square lg:aspect-square" />
+            <h3 class="mt-6 text-sm text-gray-500">
+              <a href="https://www.crazygames.com/game/pacman" target="_blank">
+                <span class="absolute inset-0"></span>
+                Pac Man studio
+              </a>
+            </h3>
+            <p class="text-base font-semibold text-gray-900">Pac-Man tournament on Oct 7, 2025</p>
+          </div>
+
+          <!-- Donkey Kong Section -->
+          <div class="group relative">
+            <img src="https://raskulous.com/scores/img/donkeykong.jpg" alt="Image of a Donkey Kong Arcade game."
+              class="w-full h-full rounded-lg bg-white object-cover group-hover:opacity-75 max-sm:h-80 sm:aspect-square lg:aspect-square" />
+            <h3 class="mt-6 text-sm text-gray-500">
+              <a href="https://www.crazygames.com/game/donkey-kong-returns" target="_blank">
+                <span class="absolute inset-0"></span>
+                Donkey-Kong
+              </a>
+            </h3>
+            <p class="text-base font-semibold text-gray-900">Donkey Kong Championship on Oct 10, 2025</p>
+          </div>
+
+          <!-- Street fighter Section -->
+          <div class="group relative">
+            <img
+              src="https://img.redbull.com/images/q_auto,f_auto/redbullcom/2016/09/08/1331816583483_2/which-one-are-you"
+              alt="street fighter video game."
+              class="w-full h-full rounded-lg bg-white object-cover group-hover:opacity-75 max-sm:h-80 sm:aspect-square lg:aspect-square" />
+
+            <h3 class="mt-6 text-sm text-gray-500 target=" _blank">
+              <a href="https://www.crazygames.com/game/street-fighter-2">
+                <span class="absolute inset-0"></span>
+                Street Fighter V
+              </a>
+            </h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <hr>
+  <!-- Special Events Section -->
+  <div>
+
+    <div class="bg-gray-900">
+      <div
+        class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+        <div>
+
+          <h2
+            class="animate-yellowToBlueGlow bg-gradient-to-r from-blue-500 to-yellow-300 text-transparent bg-clip-text pixelify-sans font-bold tracking-tight sm:text-4xl">
+            Special Events</h2>
+
+          <p class="mt-4 text-gray-100">The arcade is hosting an exciting 90s retro gaming tournament special that’s
+            sure to bring out the inner child in everyone. Weather your a teen, nostalgic adult, or just family.
+            Players will face off in classic games like Street Fighter II and Pac-Man, with the grand prize being a
+            fully restored vintage arcade machine.</p>
+
+          <dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+
+            <div class="border-t border-gray-200 pt-4">
+
+              <dt class="font-medium text-gray-100">Origin</dt>
+              <dd class="mt-2 text-sm text-gray-300">Designed for ages 12 and up, this event brings the classic gaming
+                experience to life with a vibrant and nostalgic atmosphere.</dd>
+
+            </div>
+
+            <div class="border-t border-gray-200 pt-4">
+
+              <dt class="font-medium text-gray-100">Material</dt>
+              <dd class="mt-2 text-sm text-gray-300">The tournament will feature top-of-the-line arcade machines,
+                ensuring smooth gameplay and an authentic 90s feel.</dd>
+            </div>
+
+            <div class="border-t border-gray-200 pt-4">
+
+              <dt class="font-medium text-gray-100">Dimensions</dt>
+              <dd class="mt-2 text-sm text-gray-300">The event will take place in the main arcade hall, which is
+                designed to accommodate a large crowd and ensure comfortable participation for all players.</dd>
+            </div>
+
+            <div class="border-t border-gray-200 pt-4">
+
+              <dt class="font-medium text-gray-100">Finish</dt>
+              <dd class="mt-2 text-sm text-gray-300">Expect high-energy competition, immersive lighting, and the sounds
+                of the most beloved retro games as they light up the arcade.</dd>
+            </div>
+
+            <div class="border-t border-gray-200 pt-4">
+
+              <dt class="font-medium text-gray-100">Includes</dt>
+              <dd class="mt-2 text-sm text-gray-300">Admission to the tournament, access to all participating games, and
+                a chance to win amazing prizes including the grand vintage arcade machine!</dd>
+            </div>
+
+            <div class="border-t border-gray-200 pt-4">
+
+              <dt class="font-medium text-gray-100">Considerations</dt>
+              <dd class="mt-2 text-sm text-gray-300">Open to all skill levels. Whether you're a seasoned player or just
+                there for the fun, it’s an event everyone can enjoy!</dd>
+            </div>
+
+          </dl>
+        </div>
+
+        <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+
+          <img src="https://iili.io/KVjhJ44.md.png"
+            alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
+            class="rounded-lg bg-gray-900" />
+
+          <img src="https://iili.io/KVjkjN2.md.webp"
+            alt="Top down view of walnut card tray with embedded magnets and card groove."
+            class="rounded-lg bg-gray-900" />
+
+          <img src="https://iili.io/KVjg03F.md.webp"
+            alt="Side of walnut card tray with card groove and recessed card area." class="rounded-lg bg-gray-900" />
+
+          <a href="https://freeimage.host/i/KVjPAS1"> <img src="https://iili.io/KVjPAS1.md.webp" alt="KVjPAS1.md.webp"
+              border="0" class="rounded-lg bg-gray-900"></a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--Button to link-->
+<div class="flex justify-center"> 
+    <a href="link.html">
+      <button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-xl mb-20">Register</button>
+    </a>
+</div>
+
+  <!--Calender-->
+    <div class="w-full max-w-2xl mx-auto mb-20 m-center">
+
+      <div class="bg-gray-800 rounded-lg shadow-xl p-6">
+
+        <div class="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
+          <h2 class="text-2xl font-bold text-white" id="calendarTitle">October 2025</h2>
+          <div class="flex gap-2">
+            <select id="monthSelect"
+              class="bg-gray-700 text-white px-4 py-2 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </select>
+            <select id="yearSelect"
+              class="bg-gray-700 text-white px-4 py-2 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-7 gap-2 mb-3">
+          <div class="text-center text-sm font-semibold text-gray-400 py-2">Sun</div>
+          <div class="text-center text-sm font-semibold text-gray-400 py-2">Mon</div>
+          <div class="text-center text-sm font-semibold text-gray-400 py-2">Tue</div>
+          <div class="text-center text-sm font-semibold text-gray-400 py-2">Wed</div>
+          <div class="text-center text-sm font-semibold text-gray-400 py-2">Thu</div>
+          <div class="text-center text-sm font-semibold text-gray-400 py-2">Fri</div>
+          <div class="text-center text-sm font-semibold text-gray-400 py-2">Sat</div>
+        </div>
+
+        <div id="calendarDays" class="grid grid-cols-7 gap-2">
+        </div>
+      </div>
+
+      <div id="eventModal" class="fixed inset-0 bg-black bg-opacity-70 hidden z-50">
+        <div class="flex items-center justify-center min-h-screen p-4">
+          <div class="bg-gray-800 rounded-lg shadow-2xl w-full max-w-md p-6">
+            <h3 class="text-xl font-bold text-white mb-4">
+              Events for <span id="selectedDate" class="text-blue-400"></span>
+            </h3>
+
+            <div class="mb-4">
+              <input id="eventInput" type="text" placeholder="Enter event name..."
+                class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            </div>
+
+            <div class="flex gap-2 mb-4">
+              <button id="saveEventBtn"
+                class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg transition duration-200">
+                Add Event
+              </button>
+              <button id="closeModalBtn"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 text-white font-medium px-4 py-2 rounded-lg transition duration-200">
+                Close
+              </button>
+            </div>
+
+            <div class="border-t border-gray-700 pt-4">
+              <h4 class="text-sm font-semibold text-gray-400 mb-2">Saved Events:</h4>
+              <ul id="eventList" class="space-y-2">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      const calendarDays = document.getElementById("calendarDays");
+      const monthSelect = document.getElementById("monthSelect");
+      const yearSelect = document.getElementById("yearSelect");
+      const calendarTitle = document.getElementById("calendarTitle");
+      const eventModal = document.getElementById("eventModal");
+      const selectedDateSpan = document.getElementById("selectedDate");
+      const eventInput = document.getElementById("eventInput");
+      const saveEventBtn = document.getElementById("saveEventBtn");
+      const closeModalBtn = document.getElementById("closeModalBtn");
+      const eventList = document.getElementById("eventList");
+
+      let currentMonth = new Date().getMonth();
+      let currentYear = new Date().getFullYear();
+      let selectedDate = "";
+      let events = {};
+
+      function populateSelects() {
+        const months = [
+          "January", "February", "March", "April", "May", "June",
+          "July", "August", "September", "October", "November", "December"
+        ];
+
+        months.forEach((month, i) => {
+          const option = document.createElement("option");
+          option.value = i;
+          option.textContent = month;
+          if (i === currentMonth) option.selected = true;
+          monthSelect.appendChild(option);
+        });
+
+        for (let y = 2020; y <= 2030; y++) {
+          const option = document.createElement("option");
+          option.value = y;
+          option.textContent = y;
+          if (y === currentYear) option.selected = true;
+          yearSelect.appendChild(option);
+        }
+      }
+
+      function renderCalendar(month, year) {
+        calendarDays.innerHTML = "";
+        const firstDay = new Date(year, month, 1).getDay();
+        const totalDays = new Date(year, month + 1, 0).getDate();
+        const today = new Date();
+
+        calendarTitle.textContent = `${monthSelect.options[month].text} ${year}`;
+
+        for (let i = 0; i < firstDay; i++) {
+          const blank = document.createElement("div");
+          blank.className = "aspect-square";
+          calendarDays.appendChild(blank);
+        }
+
+        for (let day = 1; day <= totalDays; day++) {
+          const dateStr = `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+          const btn = document.createElement("button");
+          btn.textContent = day;
+
+          let btnClass = "aspect-square p-2 rounded-lg text-white font-medium transition duration-200 relative ";
+
+          if (day === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
+            btnClass += "bg-blue-600 hover:bg-blue-700 ring-2 ring-blue-400";
+          } else {
+            btnClass += "bg-gray-700 hover:bg-gray-600";
+          }
+
+          btn.className = btnClass;
+
+          if (events[dateStr]?.length) {
+            const dot = document.createElement("span");
+            dot.className = "absolute top-1 right-1 w-2 h-2 bg-yellow-400 rounded-full";
+            btn.appendChild(dot);
+          }
+
+          btn.addEventListener("click", () => openModal(dateStr));
+          calendarDays.appendChild(btn);
+        }
+      }
+
+      function openModal(dateStr) {
+        selectedDate = dateStr;
+        selectedDateSpan.textContent = dateStr;
+        eventInput.value = "";
+        eventModal.classList.remove("hidden");
+        renderEventList(dateStr);
+      }
+
+      function closeModal() {
+        eventModal.classList.add("hidden");
+        eventInput.value = "";
+      }
+
+      function renderEventList(dateStr) {
+        eventList.innerHTML = "";
+        const dayEvents = events[dateStr] || [];
+
+        if (dayEvents.length === 0) {
+          eventList.innerHTML = '<li class="text-gray-500 text-sm italic">No events yet</li>';
+          return;
+        }
+
+        dayEvents.forEach((event, index) => {
+          const li = document.createElement("li");
+          li.className = "flex justify-between items-center bg-gray-700 px-3 py-2 rounded-lg";
+
+          const span = document.createElement("span");
+          span.textContent = event;
+          span.className = "text-white text-sm";
+
+          const deleteBtn = document.createElement("button");
+          deleteBtn.innerHTML = "×";
+          deleteBtn.className = "text-red-400 hover:text-red-300 font-bold text-xl leading-none";
+          deleteBtn.onclick = () => {
+            events[dateStr].splice(index, 1);
+            if (events[dateStr].length === 0) delete events[dateStr];
+            renderEventList(dateStr);
+            renderCalendar(currentMonth, currentYear);
+          };
+
+          li.appendChild(span);
+          li.appendChild(deleteBtn);
+          eventList.appendChild(li);
+        });
+      }
+
+      saveEventBtn.addEventListener("click", () => {
+        const newEvent = eventInput.value.trim();
+        if (!newEvent) return;
+
+        if (!events[selectedDate]) events[selectedDate] = [];
+        events[selectedDate].push(newEvent);
+        eventInput.value = "";
+        renderEventList(selectedDate);
+        renderCalendar(currentMonth, currentYear);
+      });
+
+      closeModalBtn.addEventListener("click", closeModal);
+
+      eventInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          saveEventBtn.click();
+        }
+      });
+
+      monthSelect.addEventListener("change", () => {
+        currentMonth = parseInt(monthSelect.value);
+        renderCalendar(currentMonth, currentYear);
+      });
+
+      yearSelect.addEventListener("change", () => {
+        currentYear = parseInt(yearSelect.value);
+        renderCalendar(currentMonth, currentYear);
+      });
+
+      eventModal.addEventListener("click", (e) => {
+        if (e.target === eventModal) {
+          closeModal();
+        }
+      });
+
+      populateSelects();
+      renderCalendar(currentMonth, currentYear);
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 10 Games | Neon Arcade</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background-color: #0a0a2a;
+      color: #f0f0ff;
+      overflow-x: hidden;
+    }
+    .glow {
+      text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #00ffff, 0 0 40px #00ffff;
+    }
+    .neon-border {
+      box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff, inset 0 0 10px #ff00ff;
+    }
+    .game-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+    }
+    .blink {
+      animation: blink 1s infinite alternate;
+    }
+    @keyframes blink {
+      from { opacity: 1; }
+      to { opacity: 0.5; }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center">
+  <header class="text-center mt-10">
+    <h1 class="text-4xl md:text-6xl glow text-pink-400 animate-pulse">
+      Top 10 Classic Games
+    </h1>
+    <p class="mt-4 text-blue-300">Relive the golden age of arcade fun!</p>
+  </header>
+  <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 mb-20 px-6 md:px-20">
+    <div class="game-card neon-border p-6 rounded-lg text-center transition-transform duration-300 bg-[#11114a]">
+      <img src="pacman.jpg" alt="Pac-Man" class="mx-auto rounded mb-4">
+      <h2 class="text-yellow-400 glow">Pac-Man</h2>
+      <p class="text-pink-300 mt-2 text-xs">Eat the dots, dodge the ghosts, and chase the high score!</p>
+    </div>
+
+    <div class="game-card neon-border p-6 rounded-lg text-center transition-transform duration-300 bg-[#11114a]">
+      <img src="donkeykong.jpg" alt="Donkey Kong" class="mx-auto rounded mb-4">
+      <h2 class="text-pink-400 glow">Donkey Kong</h2>
+      <p class="text-blue-300 mt-2 text-xs">Help Mario climb to save Pauline from the mighty ape!</p>
+    </div>
+    <div class="game-card neon-border p-6 rounded-lg text-center transition-transform duration-300 bg-[#11114a]">
+      <img src="galaga.jpg" alt="Galaga" class="mx-auto rounded mb-4">
+      <h2 class="text-blue-400 glow">Galaga</h2>
+      <p class="text-purple-300 mt-2 text-xs">Shoot down alien ships in this cosmic classic!</p>
+    </div>
+    <div class="game-card neon-border p-6 rounded-lg text-center bg-[#11114a]">
+      <img src="spaceinvaders.jpg" alt="Space Invaders" class="mx-auto rounded mb-4">
+      <h2 class="text-yellow-300 glow">Space Invaders</h2>
+      <p class="text-pink-300 mt-2 text-xs">Defend Earth from waves of pixel aliens!</p>
+    </div>
+    <div class="game-card neon-border p-6 rounded-lg text-center bg-[#11114a]">
+      <img src="frogger.jpg" alt="Frogger" class="mx-auto rounded mb-4">
+      <h2 class="text-green-400 glow">Frogger</h2>
+      <p class="text-blue-300 mt-2 text-xs">Guide your frog across roads and rivers to safety!</p>
+    </div>
+    <div class="game-card neon-border p-6 rounded-lg text-center bg-[#11114a]">
+      <img src="asteroids.jpg" alt="Asteroids" class="mx-auto rounded mb-4">
+      <h2 class="text-purple-400 glow">Asteroids</h2>
+      <p class="text-yellow-200 mt-2 text-xs">Blast floating rocks and keep your ship alive!</p>
+    </div>
+    <div class="game-card neon-border p-6 rounded-lg text-center bg-[#11114a]">
+      <img src="streetfighter.jpg" alt="Street Fighter II" class="mx-auto rounded mb-4">
+      <h2 class="text-pink-400 glow">Street Fighter II</h2>
+      <p class="text-blue-300 mt-2 text-xs">Choose your fighter and unleash your combo moves!</p>
+    </div>
+    <div class="game-card neon-border p-6 rounded-lg text-center bg-[#11114a]">
+      <img src="tetris.jpg" alt="Tetris" class="mx-auto rounded mb-4">
+      <h2 class="text-blue-400 glow">Tetris</h2>
+      <p class="text-purple-300 mt-2 text-xs">Fit falling blocks before the screen fills up!</p>
+    </div>
+    <div class="game-card neon-border p-6 rounded-lg text-center bg-[#11114a]">
+      <img src="mariobros.jpg" alt="Super Mario Bros" class="mx-auto rounded mb-4">
+      <h2 class="text-yellow-400 glow">Super Mario Bros</h2>
+      <p class="text-pink-300 mt-2 text-xs">Run, jump, and rescue the princess in style!</p>
+    </div>
+    <div class="game-card neon-border p-6 rounded-lg text-center bg-[#11114a]">
+      <img src="mortal-kombat.jpg" alt="Mortal Kombat" class="mx-auto rounded mb-4">
+      <h2 class="text-red-400 glow">Mortal Kombat</h2>
+      <p class="text-blue-300 mt-2 text-xs">Finish your foes in this legendary fighter!</p>
+    </div>
+  </main>
+  <footer class="w-full text-center py-6 border-t border-pink-400 text-sm text-blue-300">
+    <p>© 2025 pixelport</p>
+  </footer>
+</body>
+</html>
