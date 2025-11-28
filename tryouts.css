@@ -1,0 +1,12 @@
+header{
+    border: 30px solid bisque;
+    background-color: bisque;
+    text-align: center;
+    font-size: 30px;
+
+}
+footer{
+    font: optional;
+    font-size: 15px;
+     margin-top: auto;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mad Libs</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='mad.css'>
+   
+</head>
+<body>
+    <h1>Mad Lib</h1>
+    <hr>
+
+    <h2>Mad Lib Instructions</h2>
+    <p>
+        Fill in all the input boxes, then click the <em>"Mad Libs"</em> button
+    </p>
+    <div class="para">
+    <ol type="I" style="margin-left: 75px;">
+        <li>Plural <span class="term">Noun</span>: <input id="plural-noun" type="text"></li>
+        <li><span class="term">Adjective</span>: <input id="adjective" type="text"></li>
+        <li>Present tense <span class="term">Verb</span>: <input id="verb" type="text"></li>
+        <li><span class="term">Noun</span>: <input id="noun" type="text"></li>
+    </ol>
+    </div>
+    <p>
+        <button id="mad-libs-button">Mad Lib</button>
+        <button class="madlib2-button">Mad Lib 2</button>
+    </p>
+    <hr>
+    <h2>Mad Lib Results</h2>
+    <p id="result">
+        "There are too many_______on this______aeroplane", I screamed, "somebody has to______on the_______to solve this problem"
+    </p>
+    <script src='mad.js'></script>
+</body>
+</html>
